@@ -1,0 +1,47 @@
+https://www.youtube.com/watch?v=q_mXVZ6VJs4
+
+AS OF 08.01.2026 STATE
+
+------ IN CMAKE: ------
+Cache file:
+ENABLE_UNICODE:BOOL=1
+USE_LIBIDN2:BOOL=0
+BUILD_STATIC_LIBS:BOOL=1
+LIBCURL_OUTPUT_NAME:STRING=libcurl-static
+CURL_ZSTD:STRING=OFF
+BUILD_LIBCURL_DOCS:BOOL=0
+CURL_USE_LIBSSH2:BOOL=0
+BUILD_EXAMPLES:BOOL=0
+CURL_BROTLI:STRING=OFF
+CURL_DISABLE_INSTALL:BOOL=1
+CURL_USE_SCHANNEL:BOOL=1
+BROTLIDEC_LIBRARY:FILEPATH=BROTLIDEC_LIBRARY-NOTFOUND
+BUILD_TESTING:BOOL=0
+HTTP_ONLY:BOOL=1
+BUILD_STATIC_CURL:BOOL=1
+BUILD_CURL_EXE:BOOL=1
+LIBIDN2_INCLUDE_DIR:PATH=LIBIDN2_INCLUDE_DIR-NOTFOUND
+CMAKE_EXE_LINKER_FLAGS:STRING=/machine:x64
+USE_WIN32_IDN:BOOL=1
+BUILD_MISC_DOCS:BOOL=0
+USE_NGHTTP2:BOOL=0
+CURL_WINDOWS_SSPI:BOOL=1
+CURL_ZLIB:STRING=OFF
+ENABLE_CURL_MANUAL:BOOL=0
+CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.exe
+BUILD_SHARED_LIBS:BOOL=0
+CURL_USE_LIBPSL:BOOL=0
+APXS:FILEPATH=APXS-NOTFOUND
+------------------------------------
+
+-------- In .sln project: ----------
+
+Additional Include Directories: .\libcurl-dll-lib\include;.\tinf\src;%(AdditionalIncludeDirectories)
+Additional options -DCURL_STATICLIB
+
+Additional Dependencies: Normaliz.lib;Ws2_32.lib;Wldap32.lib;Crypt32.lib;advapi32.lib;Iphlpapi.lib;Secur32.lib;.\libcurl-dll-lib\lib\libcurl-static.lib;%(AdditionalDependencies)
+
+/* Maybe worth it to add to ur .c file */
+#define CURL_STATICLIB
+
+------------------------------------
