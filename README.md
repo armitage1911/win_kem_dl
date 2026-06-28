@@ -1,4 +1,4 @@
-Yet another kemono downloader but recreated out of curiosity in C89 with libcurl, yyjson, stb_sprintf and tinflate. 
+Yet another Kemono downloader but recreated out of curiosity in C89 with libcurl, yyjson, stb_sprintf and tinflate. 
 
 I did this in VS2026 but u can also build this app with GCC (both Linux and Android) and TCC (althrought i didn't tested it, lol). 
 
