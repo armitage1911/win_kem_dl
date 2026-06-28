@@ -6,8 +6,8 @@ Using:
 Just pass 'service' 'userid' postid' into an app. I.e. 'app.exe patreon 12345 12345'. 
 
 It works like a charm but it has three downsides: 
-  -- Works unstable if u using CF WARP or any VPN's. 
-  -- Doesn't support async because i dunno where to implement it. 
-  -- Because of kemono devs it can't download the first attachment. 
+- Works unstable if u using CF WARP or any VPN's. 
+- Doesn't support async because i dunno where to implement it. 
+- Because of kemono devs it can't download the first attachment. 
 
 Cheers! 
